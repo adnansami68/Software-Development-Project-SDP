@@ -41,13 +41,24 @@ public:
         }
     }
 
-
-    string getAccountNumber() const { return accountNumber; }
-    string getAccountHolderName() const { return accountHolderName; }
-    double getBalance() const { return balance; }
-    string getAccountType() const { return accountType; }
-    string getPassword() const { return password; }
-    const vector<string>& getTransactionHistory() const { return transactionHistory; }
+    string getAccountNumber() const { 
+        return accountNumber; 
+    }
+    string getAccountHolderName() const { 
+        return accountHolderName; 
+    }
+    double getBalance() const { 
+        return balance; 
+    }
+    string getAccountType() const {
+        return accountType; 
+    }
+    string getPassword() const {
+         return password;
+    }
+    const vector<string>& getTransactionHistory() const {
+         return transactionHistory; 
+    }
 
     void deposit(double amount) {
         if (amount > 0) {
