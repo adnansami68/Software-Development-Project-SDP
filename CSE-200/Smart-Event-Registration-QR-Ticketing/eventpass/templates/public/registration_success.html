@@ -1,0 +1,5 @@
+{% extends 'base.html' %}
+{% block title %}Registration received — EventPass{% endblock %}
+{% block content %}
+<section class="section section-soft"><div class="container narrow-container"><div class="success-card"><div class="success-icon">✓</div><span class="eyebrow">REGISTRATION RECEIVED</span><h1>You're on the list.</h1><p>Your registration for <strong>{{ event.title }}</strong> has been submitted successfully.</p><div class="summary-box"><div><small>PARTICIPANT</small><strong>{{ registration.full_name }}</strong></div><div><small>EMAIL</small><strong>{{ registration.email }}</strong></div><div><small>REGISTRATION ID</small><strong>#{{ '%06d'|format(registration.id) }}</strong></div><div><small>STATUS</small><strong class="text-warning">Pending organizer approval</strong></div></div><div class="form-note"><span>✉</span><p>Your QR entry ticket will be emailed after the organizer approves your registration. Keep an eye on your inbox.</p></div><a class="btn btn-secondary btn-block" href="{{ url_for('public.index') }}">Back to EventPass</a></div></div></section>
+{% endblock %}

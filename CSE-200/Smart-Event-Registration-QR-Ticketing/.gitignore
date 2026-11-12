@@ -1,0 +1,30 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+!.env.production.example
+
+# Local state / generated artifacts
+instance/
+*.sqlite
+*.sqlite3
+*.db
+outbox/
+tickets/
+*.pdf
+
+# Vercel / editor / OS
+.vercel/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
